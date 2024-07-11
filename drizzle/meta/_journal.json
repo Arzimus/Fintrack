@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1720677674258,
+      "tag": "0000_third_meteorite",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1720678756808,
+      "tag": "0001_fresh_pandemic",
+      "breakpoints": true
+    }
+  ]
+}
