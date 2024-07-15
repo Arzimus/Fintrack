@@ -14,6 +14,9 @@ const routes = app.route("/accounts", accounts)
 // enable hono to work on get and post routes this overwrites the existing route handlers
 export const GET = handle(app)
 export const POST = handle(app)
+export const PATCH = handle(app)
+export const DELETE = handle(app)
+
 
 // The RPC feature allows sharing of the API specifications between the server and the client.
 // You can export the types of input type specified by the Validator and the output type 
