@@ -15,6 +15,13 @@
       "when": 1720678756808,
       "tag": "0001_fresh_pandemic",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1721103612132,
+      "tag": "0002_brown_nightshade",
+      "breakpoints": true
     }
   ]
 }

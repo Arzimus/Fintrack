@@ -98,6 +98,7 @@ export function DataTable<TData, TValue>({
               onClick={async () => {
                 const ok = await confirm()
                 if (ok) {
+                  // gives arrray of rows selected
                   onDelete(table.getFilteredSelectedRowModel().rows)
                   table.resetRowSelection()
                 }
