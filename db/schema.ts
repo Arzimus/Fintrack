@@ -38,6 +38,7 @@ export const transactions = pgTable("transactions", {
   amount: integer("amount").notNull(),
   payee: text("payee").notNull(),
   userId: text("notes"),
+  notes: text("notes"),
   date: timestamp("date", { mode: "date" }).notNull(),
   // refer to a user account
   accountId: text("account_id").references(() => accounts.id, {
