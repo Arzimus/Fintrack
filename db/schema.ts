@@ -37,7 +37,6 @@ export const transactions = pgTable("transactions", {
   id: text("id").primaryKey(),
   amount: integer("amount").notNull(),
   payee: text("payee").notNull(),
-  userId: text("notes"),
   notes: text("notes"),
   date: timestamp("date", { mode: "date" }).notNull(),
   // refer to a user account

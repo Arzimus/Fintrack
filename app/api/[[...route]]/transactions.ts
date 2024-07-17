@@ -59,7 +59,7 @@ const app = new Hono()
         .leftJoin(categories, eq(transactions.categoryId, categories.id))
         .where(
           and(
-            // if we have an accountId the load the transactin only with that accountId
+            // if we have an accountId the load the transactin only with that accountId this accout id is sent from the user
             accountId ? eq(transactions.accountId, accountId) : undefined,
             eq(accounts.userId, auth.userId),
             gte(transactions.date, startDate),
@@ -131,10 +131,39 @@ const app = new Hono()
 
       const [data] = await db.insert(transactions).values({
         id: createId(),
-        userId: auth?.userId,
         ...values,
       }).returning()
       // .returing to return the inserted row 
+      return c.json({ data })
+    }
+  )
+  .post("/bulk-create",
+    clerkMiddleware(),
+    zValidator("json",
+      z.array(
+        insertTransactionSchema.omit({
+          id: true,
+        })
+      )
+    ),
+    async (c) => {
+      const auth = getAuth(c)
+      const values = c.req.valid("json")
+
+      if (!auth?.userId) {
+        return c.json({ error: "unauthorized" }, 401)
+      }
+
+      const data = await db
+        .insert(transactions)
+        .values(
+          values.map((value) => ({
+            id: createId(),
+            ...value
+          }))
+        )
+        .returning()
+
       return c.json({ data })
     }
   )
