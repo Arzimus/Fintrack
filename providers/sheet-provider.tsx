@@ -4,6 +4,7 @@ import { EditAccountSheet } from "@/features/accounts/components/edit-account"
 import { NewAccountSheet } from "@/features/accounts/components/new-account-sheet"
 import { EditCategorySheet } from "@/features/categories/components/edit-category"
 import { NewCategorySheet } from "@/features/categories/components/new-category-sheet"
+import { NewTransactionSheet } from "@/features/transactions/components/new-transaction-sheet"
 import { useMountedState } from "react-use"
 
 
@@ -18,8 +19,11 @@ export const SheetProvider = () => {
     <>
       <NewAccountSheet />
       <EditAccountSheet />
+
       <NewCategorySheet />
       <EditCategorySheet />
+
+      <NewTransactionSheet />
     </>
   )
 }

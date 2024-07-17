@@ -2,7 +2,7 @@
 
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "@/components/ui/sheet"
 
-import { AccountForm } from "./account-form";
+import { TransactionForm } from "./transaction-form";
 import { insertAccountSchema } from "@/db/schema";
 import { z } from "zod";
 import { useOpenAccount } from "../hooks/use-open-account";
@@ -80,7 +80,7 @@ export const EditAccountSheet = () => {
             </div>
           ) : (
             // pass id so that it also gives the delete button
-            <AccountForm
+            <TransactionForm
               id={id}
               onSubmit={onSubmit}
               disabled={isPending}
