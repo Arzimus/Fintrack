@@ -62,7 +62,7 @@ export const NewTransactionSheet = () => {
   return (
 
     <Sheet open={isOpen} onOpenChange={onClose}>
-      <SheetContent className="space-y-4">
+      <SheetContent className="space-y-4 overflow-y-auto max-h-[calc(100vh-4rem)]">
         <SheetHeader>
           <SheetTitle>
             New Transaction
