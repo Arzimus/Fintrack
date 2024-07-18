@@ -22,7 +22,7 @@ const formSchema = z.object({
   amount: z.string(),
   notes: z.string().nullable().optional()
 })
-
+// created different formschema becuase i wanted to keep the amount in string fromat for further convinences 
 const apiSchema = insertTransactionSchema.omit({
   id: true
 })
@@ -163,7 +163,7 @@ export const TransactionForm = ({
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Notes</FormLabel>
+              <FormLabel>Amount</FormLabel>
               <FormControl>
                 <AmountInput
                   {...field}
@@ -210,7 +210,7 @@ export const TransactionForm = ({
           variant="outline"
         >
           <Trash className="size-4 mr-2" />
-          Delete Account
+          Delete Transaction
         </Button>)}
       </form>
     </Form>

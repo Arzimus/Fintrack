@@ -46,6 +46,7 @@ export const Select = (
       value={formattedValue}
       onChange={onSelect}
       options={options}
+      // create new options along with the existing ones by eventually calling the mutate fn here oncreate
       onCreateOption={onCreate}
       isDisabled={disabled}
     />

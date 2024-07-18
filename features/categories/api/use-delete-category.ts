@@ -34,6 +34,8 @@ export const useDeleteCategory = (id?: string) => {
       // refetch on successfull creation of account
       queryClient.invalidateQueries({ queryKey: ["cateogry", { id }] })
       queryClient.invalidateQueries({ queryKey: ["categories"] })
+      queryClient.invalidateQueries({ queryKey: ["transactions"] })
+
     },
     onError: () => {
       toast.error("Failed to delete category ")

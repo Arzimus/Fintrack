@@ -36,6 +36,8 @@ export const useEditCategory = (id?: string) => {
       // refetch on successfull creation of account
       queryClient.invalidateQueries({ queryKey: ["category", { id }] })
       queryClient.invalidateQueries({ queryKey: ["categories"] })
+      queryClient.invalidateQueries({ queryKey: ["transactions"] })
+
     },
     onError: () => {
       toast.error("Failed to edit category ")

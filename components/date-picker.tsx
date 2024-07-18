@@ -12,7 +12,7 @@ import {
   PopoverContent,
   PopoverTrigger
 } from './ui/popover'
-import { Span } from 'next/dist/trace'
+
 
 type Props = {
   value?: Date
@@ -42,7 +42,9 @@ export const DatePicker = ({
     <PopoverContent>
       <Calendar
         mode='single'
+        // field.value
         selected={value}
+        //field.change 
         onSelect={onChange}
         disabled={disabled}
         initialFocus

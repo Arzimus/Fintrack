@@ -5,21 +5,21 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Loader2, Plus } from "lucide-react"
 import { cloumns } from "./column"
 import { DataTable } from "@/components/DataTable"
-import { useGetAccounts } from "@/features/accounts/api/use-get-accounts"
 import { Skeleton } from "@/components/ui/skeleton"
-import { useBulkDeleteAccount } from "@/features/accounts/api/use-bulk-delete-accounts"
 import { useNewTransaction } from "@/features/transactions/hooks/use-new-transaction"
+import { useGetTransactions } from "@/features/transactions/api/use-get-transactions"
+import { useBulkDeleteTransactions } from "@/features/transactions/api/use-bulk-delete-transactions"
 
 
-const Accounts = () => {
+const Transactions = () => {
   const newTransaction = useNewTransaction()
-  const accountsQuery = useGetAccounts()
-  const accounts = accountsQuery.data || []
-  const deleteAccounts = useBulkDeleteAccount()
+  const transactionsQuery = useGetTransactions()
+  const transactions = transactionsQuery.data || []
+  const deleteTransactions = useBulkDeleteTransactions()
 
-  const isDisabled = accountsQuery.isLoading || deleteAccounts.isPending
+  const isDisabled = transactionsQuery.isLoading || deleteTransactions.isPending
 
-  if (accountsQuery.isLoading) {
+  if (transactionsQuery.isLoading) {
     return (
       <div>
         <Card className="border-none drop-shadow-sm">
@@ -54,11 +54,11 @@ const Accounts = () => {
         <CardContent>
           <DataTable
             columns={cloumns}
-            data={accounts}
-            filterKey="name"
+            data={transactions}
+            filterKey="payee"
             onDelete={(row) => {
               const ids = row.map((r) => r.original.id)
-              deleteAccounts.mutate({ ids })
+              deleteTransactions.mutate({ ids })
             }}
             disabled={isDisabled}
           />
@@ -68,4 +68,4 @@ const Accounts = () => {
   )
 }
 
-export default Accounts
+export default Transactions

@@ -34,6 +34,8 @@ export const useDeleteAccount = (id?: string) => {
       // refetch on successfull creation of account
       queryClient.invalidateQueries({ queryKey: ["accounts", { id }] })
       queryClient.invalidateQueries({ queryKey: ["accounts"] })
+      queryClient.invalidateQueries({ queryKey: ["transactions"] })
+
     },
     onError: () => {
       toast.error("Failed to delete account ")
