@@ -10,13 +10,12 @@ type Props = {
 const options = [
   "amount",
   "payee",
-  "notes",
   "date"
 ]
 
 export const TableHeadSelect = ({ columnIndex, selectedColumn, onChange }: Props) => {
 
-  const currentSelection = selectedColumn[`columns_${columnIndex}`]
+  const currentSelection = selectedColumn[`column_${columnIndex}`]
 
   return (
     <Select
@@ -36,7 +35,7 @@ export const TableHeadSelect = ({ columnIndex, selectedColumn, onChange }: Props
         {options.map((option, index) => {
           // makes sure that the option selected in one column cannot be used in ohter column
           const disabled = Object.values(selectedColumn)
-            .includes(option) && selectedColumn[`columns_${columnIndex}`] !== option
+            .includes(option) && selectedColumn[`column_${columnIndex}`] !== option
 
 
           return (
