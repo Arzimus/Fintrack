@@ -30,6 +30,7 @@ const Transactions = () => {
 
 
   const onUpload = (results: typeof INITIAL_IMPORT_RESULTS) => {
+    console.log(results)
     setImportResults(results)
     setVariant(VARIANTS.IMPORT)
   }
