@@ -32,7 +32,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "features/categories/components/edit-categorytsx"
+    "features/categories/components/edit-categorytsx",
+    "features/transactions/hooks/use-select-account-tsx"
   ],
   "exclude": [
     "node_modules"
