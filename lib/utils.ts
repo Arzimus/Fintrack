@@ -18,3 +18,12 @@ export function formatCurrency(value: number) {
     minimumFractionDigits: 2,
   }).format(value)
 }
+
+export function calcultePercentChange(current: number, previous: number) {
+  if (current === null) current = 0;
+  if (previous === null) previous = 0;
+  if (previous === 0) {
+    return (previous === current) ? 0 : 100
+  }
+  return ((current - previous) / previous) * 100
+}
