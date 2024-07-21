@@ -31,7 +31,7 @@ const app = new Hono()
 
       // if no from and to provided we will return transaction data for last 30 days
       const defaultTo = new Date();
-      const defaultFrom = subDays(defaultTo, 120)
+      const defaultFrom = subDays(defaultTo, 30)
 
       const startDate = from
         ? parse(from, "yyyy-MM-dd", new Date())

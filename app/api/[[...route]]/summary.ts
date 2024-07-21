@@ -30,7 +30,7 @@ const app = new Hono()
         return c.json({ error: "unauthorized" }, 401)
       }
       const defaultTo = new Date()
-      const defaultFrom = subDays(defaultTo, 120)
+      const defaultFrom = subDays(defaultTo, 30)
 
       const startDate = from
         ? parse(from, "yyyy-MM-dd", new Date())
