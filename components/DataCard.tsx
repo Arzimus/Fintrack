@@ -24,6 +24,7 @@ const boxVariant = cva(
   }
 )
 
+
 const iconVariant = cva(
   "size-6",
   {
@@ -40,6 +41,7 @@ const iconVariant = cva(
     }
   }
 )
+
 
 type BoxVariants = VariantProps<typeof boxVariant>;
 type IconVariants = VariantProps<typeof iconVariant>;
