@@ -9,15 +9,16 @@
 » Tailwind <br>
 » Nextjs
 
-<h2>Screenshots of the Project 📸</h2>
+<h3>Screenshots of the Project 📸</h3>
 
 <div align='center'>
 ![Create Next App-1](https://github.com/user-attachments/assets/e7377a9b-09d2-4b46-8ce2-5c4da1548146)
+  <img src='https://github.com/user-attachments/assets/e7377a9b-09d2-4b46-8ce2-5c4da1548146'/>
 </div>
 
 <h3>Key features</h3>
 
-->Interactive Financial Dashboard
+<ul><
 🔁 Changeable Chart Types: Visualize your financial data with various chart options.
 🗓 Account and Date Filters: Easily filter transactions by account and date to view specific data.
 💹 Detailed Transactions Table: Access a comprehensive table of all your transactions.
@@ -36,3 +37,4 @@ Technology Stack
 🌐 Built with Next.js 14: Leveraging the latest features and capabilities of Next.js.
 🎨 Styled with TailwindCSS and Shadcn UI: Elegant and responsive design with TailwindCSS and Shadcn UI.
 💾 PostgreSQL & Drizzle ORM: Reliable and efficient data storage with PostgreSQL and Drizzle ORM.
+/ul>
