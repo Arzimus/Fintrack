@@ -17,25 +17,39 @@
 
 <h3>Key features</h3>
 
--🔁 Changeable Chart Types: Visualize your financial data with various chart options.
--🗓 Account and Date Filters: Easily filter transactions by account and date to view specific data.
--💹 Detailed Transactions Table: Access a comprehensive table of all your transactions.
+🔁 Changeable Chart Types: Visualize your financial data with various chart options.
 
-  Transaction Management
--➕ Form to Add Transactions: Quickly add new transactions with an intuitive form.
--🧩 Customizable Select Components: Personalize your transaction categories and accounts.
--💵 Income and Expense Toggle: Switch between income and expense views for better insights.
--🔄 CSV Transaction Imports: Import your transactions effortlessly using CSV files.
--🔥 API via Hono.js: Robust API integration for seamless data management.
--🪝 State Management via Tanstack React Query: Efficient state management for a smooth user experience.
--🗑 Bulk Delete and Search in Transactions: Easily search and manage multiple transactions at once.
+🗓 Account and Date Filters: Easily filter transactions by account and date to view specific data.
 
-User and Account Management
--⚙️ Bank Disconnection and Subscription Management: Manage your bank connections and subscriptions with ease.
--👤 User Settings Customization: Customize user settings to fit your personal preferences.
+💹 Detailed Transactions Table: Access a comprehensive table of all your transactions.
 
-Technology Stack
--🌐 Built with Next.js 14: Leveraging the latest features and capabilities of Next.js.
--🎨 Styled with TailwindCSS and Shadcn UI: Elegant and responsive design with TailwindCSS and Shadcn UI.
--💾 PostgreSQL & Drizzle ORM: Reliable and efficient data storage with PostgreSQL and Drizzle ORM.
+  Transaction Management:
+  
+➕ Form to Add Transactions: Quickly add new transactions with an intuitive form.
+
+🧩 Customizable Select Components: Personalize your transaction categories and accounts.
+
+💵 Income and Expense Toggle: Switch between income and expense views for better insights.
+
+🔄 CSV Transaction Imports: Import your transactions effortlessly using CSV files.
+
+🔥 API via Hono.js: Robust API integration for seamless data management.
+
+🪝 State Management via Tanstack React Query: Efficient state management for a smooth user experience.
+
+🗑 Bulk Delete and Search in Transactions: Easily search and manage multiple transactions at once.
+
+User and Account Management:
+
+⚙️ Bank Disconnection and Subscription Management: Manage your bank connections and subscriptions with ease.
+
+👤 User Settings Customization: Customize user settings to fit your personal preferences.
+
+Technology Stack:
+
+🌐 Built with Next.js 14: Leveraging the latest features and capabilities of Next.js.
+
+🎨 Styled with TailwindCSS and Shadcn UI: Elegant and responsive design with TailwindCSS and Shadcn UI.
+
+💾 PostgreSQL & Drizzle ORM: Reliable and efficient data storage with PostgreSQL and Drizzle ORM.
 
