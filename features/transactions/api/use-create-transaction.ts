@@ -32,6 +32,8 @@ export const useCreateTransaction = () => {
       toast.success("Transaction created")
       // refetch on successfull creation of account
       queryClient.invalidateQueries({ queryKey: ["transactions"] })
+      queryClient.invalidateQueries({ queryKey: ["summary"] })
+
     },
     onError: () => {
       toast.error("Failed to create transaction ")

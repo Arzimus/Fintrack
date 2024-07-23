@@ -33,6 +33,8 @@ export const useBulkDeleteTransactions = () => {
       toast.success("Transactions Deleted")
       // refetch on successfull creation of account
       queryClient.invalidateQueries({ queryKey: ["transactions"] })
+      queryClient.invalidateQueries({ queryKey: ["summary"] })
+
     },
     onError: () => {
       toast.error("Failed to delete transactions ")

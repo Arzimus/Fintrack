@@ -16,4 +16,4 @@ export const useGetAccounts = () => {
   })
 
   return query
-}
+} 

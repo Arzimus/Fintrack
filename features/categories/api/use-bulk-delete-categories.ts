@@ -33,6 +33,8 @@ export const useBulkDeleteCategories = () => {
       toast.success("Categories Deleted")
       // refetch on successfull creation of account
       queryClient.invalidateQueries({ queryKey: ["categories"] })
+      queryClient.invalidateQueries({ queryKey: ["summary"] })
+
     },
     onError: () => {
       toast.error("Failed to delete categories ")

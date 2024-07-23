@@ -57,7 +57,7 @@ export const RadialVariant = ({ data }: Props) => {
                         {entry.value}
                       </span>
                       <span className="text-sm">
-                        {formatCurrency(entry.payload.value * 100)}
+                        {formatCurrency(entry.payload.value)}
                       </span>
                     </div>
                   </li>
