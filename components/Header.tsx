@@ -15,7 +15,7 @@ const Header = () => {
      '>
       <div className='max-w-screen-2xl mx-auto'>
         <div className='w-full flex items-center justify-between mb-14'>
-          <div className='flex items-center lg:gap-x-16'>
+          <div className='flex items-center lg:gap-x-16 gap-x-4'>
             <HeaderLogo />
             <Navigation />
           </div>
