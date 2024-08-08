@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h2>About the project</h2>
 
-## Getting Started
+<p>Welcome to the Finance SaaS Platform, a comprehensive tool designed to help you efficiently track and manage your income and expenses. This platform enables you to categorize transactions, assign them to specific accounts, and import transactions using a CSV file.</p>
 
-First, run the development server:
+👉 Live Demo: <a href='https://fintrack-n7xrcrxu1-rohits-projects-96564c3e.vercel.app'>Live Demo</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h3>Build with:</h3>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+» Tailwind <br>
+» Nextjs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h3>Screenshots of the Project 📸</h3>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<div align='center'>
+  <img src='https://github.com/user-attachments/assets/e7377a9b-09d2-4b46-8ce2-5c4da1548146'/>
+</div>
 
-## Learn More
+<h3>Key features</h3>
 
-To learn more about Next.js, take a look at the following resources:
+🔁 Changeable Chart Types: Visualize your financial data with various chart options.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🗓 Account and Date Filters: Easily filter transactions by account and date to view specific data.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+💹 Detailed Transactions Table: Access a comprehensive table of all your transactions.
 
-## Deploy on Vercel
+  Transaction Management:
+  
+➕ Form to Add Transactions: Quickly add new transactions with an intuitive form.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧩 Customizable Select Components: Personalize your transaction categories and accounts.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+💵 Income and Expense Toggle: Switch between income and expense views for better insights.
+
+🔄 CSV Transaction Imports: Import your transactions effortlessly using CSV files.
+
+🔥 API via Hono.js: Robust API integration for seamless data management.
+
+🪝 State Management via Tanstack React Query: Efficient state management for a smooth user experience.
+
+🗑 Bulk Delete and Search in Transactions: Easily search and manage multiple transactions at once.
+
+User and Account Management:
+
+⚙️ Bank Disconnection and Subscription Management: Manage your bank connections and subscriptions with ease.
+
+👤 User Settings Customization: Customize user settings to fit your personal preferences.
+
+Technology Stack:
+
+🌐 Built with Next.js 14: Leveraging the latest features and capabilities of Next.js.
+
+🎨 Styled with TailwindCSS and Shadcn UI: Elegant and responsive design with TailwindCSS and Shadcn UI.
+
+💾 PostgreSQL & Drizzle ORM: Reliable and efficient data storage with PostgreSQL and Drizzle ORM.
+
